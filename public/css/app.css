@@ -1,1 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:rgb(194, 61, 227);
+}
+/* Some custom css for Ecommerce website */
+.custom-login{
+    padding-top: 100px;
+}
+.footer{
+    background-color: rgb(192, 187, 187);
+    width:100%;
+    margin-top:12vh;
+}
+.footer p{
+    margin-left:500px;
+}
+.slider-img{
+    height:450px;
+}
+.slider-text{
+    background-color: rgba(46, 48, 49, 0.558);
+    border-radius:30px;
+}
+
+/* .products-wraper{
+    flex-direction: column;
+} */
+.products-wraper .product-img{
+    height:100px;
+}
+.products-wraper .products{
+    float:left;
+    width:23%;
+}
+.products-wraper .products:hover{
+    box-shadow:0 0 9px 4px rgba(0,0,0,.3);
+}
+
+.single-product-img{
+    width:300px;
+}
 
