@@ -30,7 +30,7 @@
         <ul class="navbar-nav navbar-right">
             @if(auth()->user())
               <li class="nav-item">
-                <a href="#" class="nav-link mr-5 font-weight-bold bg-info">{{ auth()->user()->name }}</a>
+                <a href="#" class="nav-link mr-2 font-weight-bold bg-info">{{ auth()->user()->name }}</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link bg-primary text-white" style="margin-left:10px;" href="{{ route('logout') }}">Logout</a>
@@ -44,7 +44,7 @@
               </li>
             @endif
             <li>
-                <a class="nav-link" href="#">Cart(0)</a>
+                <a class="nav-link" href="{{ route('cart.list') }}">Cart({{ Cart::getTotalQuantity()}})</a>
             </li>
         </ul>
       </div>

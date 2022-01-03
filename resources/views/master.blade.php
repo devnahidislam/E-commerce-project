@@ -10,6 +10,8 @@
 
     <link href="{{ url('/css/app.css') }}" rel="stylesheet">
     <title>E-commerce Website</title>
+    <!--Tailwind Css-->
+    <!--<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">-->
   </head>
   <body>
       {{ View::make('header') }}

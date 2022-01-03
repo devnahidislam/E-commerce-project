@@ -57,4 +57,6 @@ class productController extends Controller
         $product = product::find($pid);
         return view('products.details',['product'=>$product]);
     }
+
+    
 }
