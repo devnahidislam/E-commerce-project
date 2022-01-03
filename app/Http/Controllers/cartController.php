@@ -29,5 +29,4 @@ class cartController extends Controller
 
         return redirect()->route('cart.list');
     }
-    
 }

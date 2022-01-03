@@ -14,7 +14,7 @@
                 <table class="table table-striped table-bordered" cellspacing="0" cellpadding="2px">
                     <thead>
                         <tr>
-                            <th class="hidden">Cart total{{ Cart::getTotal() }}</th>
+                            <th class="hidden"></th>
                             <th class="text-center">Name</th>
                             <th class="text-center">Quantity</th>
                             <th class="text-center">Price</th>
@@ -22,7 +22,8 @@
                         </tr>
                     </thead>
                     <tbody>
-
+                        <!--Static Data for test Table-->
+                    <!--
                         <tr>
                             <td>
                                 <a href="#">
@@ -57,7 +58,7 @@
                                 </form>
                             </td>
                         </tr>
-
+                    -->
                         @foreach ($cartItems as $item)
                             <tr>
                                 <td>
@@ -98,7 +99,7 @@
                 </table>
             </div>
             <div>
-                Total: ${{ Cart::getTotal() }}
+                <p>Total: ${{ Cart::getTotal() }}</p>
             </div>
             <div>
                 <form action="{{ route('cart.clear') }}" method="POST">
